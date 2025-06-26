@@ -9,7 +9,7 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-  origin: 'https://authentication-iota-three.vercel.app/',
+  origin: 'https://authentication-iota-three.vercel.app',
   credentials: true
 }));
 app.use(express.json());
