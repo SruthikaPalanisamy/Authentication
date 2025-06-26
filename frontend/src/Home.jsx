@@ -13,7 +13,7 @@ export default function Home() {
   }, []);
 
   const lg = async () => {
-    await axios.post('http://localhost:5000/api/auth/logout', {}, { withCredentials: true });
+    await axios.post('https://authentication-1-cvs5.onrender.com/api/auth/logout', {}, { withCredentials: true });
     setU(null);
   };
 
