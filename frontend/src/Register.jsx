@@ -13,7 +13,7 @@ export default function Register() {
     setLoading(true);
     setError('');
     try {
-      await axios.post('https://authentication-1-cvs5.onrender.com', data, { withCredentials: true });
+      await axios.post('https://authentication-1-cvs5.onrender.com/api/auth/register', data, { withCredentials: true });
       navigate('/login');
     } catch (err) {
       setError(err.response?.data?.message || 'Registration failed');

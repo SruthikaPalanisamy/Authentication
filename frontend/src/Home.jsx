@@ -7,7 +7,7 @@ export default function Home() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get('https://authentication-1-cvs5.onrender.com', { withCredentials: true })
+    axios.get('https://authentication-1-cvs5.onrender.com/api/auth/me', { withCredentials: true })
       .then(r => setU(r.data.user))
       .catch(() => setU(null));
   }, []);
